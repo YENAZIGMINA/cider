@@ -118,7 +118,7 @@ mBtn.click(function (e) {
 
 })
 
-//슬라이드 숫자 연결하기 (깃헙 events 가장 아래 복붙)
+//탭 색상 이미지위치 연결하기 (깃헙 events 가장 아래 복붙)
 mCount.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
     console.log(nextSlide); //nextSlide - 다음화면으로~!
     if (nextSlide >= 0 && nextSlide <= 3){
@@ -133,6 +133,7 @@ mCount.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
         mbg.removeClass("bg-item-01 bg-item-02 bg-item-03 bg-item-04 bg-item-05").addClass("bg-item-05")
     }
 
+    //슬라이드 숫자 연결하기
     $('.memory_page_btn em').text(nextSlide + 1)
     //기본 첫 숫자는 0이므로 1로 나타나게 하기위해 +1
 
